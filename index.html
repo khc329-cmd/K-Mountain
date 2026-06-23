@@ -346,8 +346,10 @@ function stats(id){const r=_ratingsCache[id]||{};const v=Object.values(r);return
 function myRating(id){if(!_user)return 0;return(_ratingsCache[id]||{})[_user.uid]||0}
 async function loadRatings(id){
   if(_ratingsCache[id])return;
-  const snap=await db.collection("ratings").doc(id).collection("votes").get();
-  _ratingsCache[id]={};snap.forEach(d=>_ratingsCache[id][d.id]=d.data().score);
+  try{
+    const snap=await db.collection("ratings").doc(id).collection("votes").get();
+    _ratingsCache[id]={};snap.forEach(d=>_ratingsCache[id][d.id]=d.data().score);
+  }catch(e){_ratingsCache[id]={};}
 }
 async function setRating(id,score){
   if(!_user)return;
@@ -393,8 +395,10 @@ function verifyClimb(m,btn){
 
 /* ── Reviews ── */
 async function loadReviews(id){
-  const snap=await db.collection("reviews").doc(id).collection("entries").orderBy("ts","desc").limit(50).get();
-  _reviewsCache[id]=[];snap.forEach(d=>_reviewsCache[id].push({id:d.id,...d.data()}));
+  try{
+    const snap=await db.collection("reviews").doc(id).collection("entries").orderBy("ts","desc").limit(50).get();
+    _reviewsCache[id]=[];snap.forEach(d=>_reviewsCache[id].push({id:d.id,...d.data()}));
+  }catch(e){_reviewsCache[id]=[];}
 }
 function reviewsFor(id){return _reviewsCache[id]||[]}
 async function addReview(id,obj){
