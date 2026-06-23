@@ -87,7 +87,8 @@
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:22px;padding-bottom:30px}
   .card{background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);cursor:pointer;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
   .card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
-  .card .ph{height:182px;position:relative;display:flex;align-items:flex-end;padding:14px;background-size:cover;background-position:center}
+  .card .ph{height:182px;position:relative;display:flex;align-items:flex-end;padding:14px;background-size:cover;background-position:center;overflow:hidden}
+  .card .ph .ph-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
   .card .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.62));z-index:1}
   .card .ph h3{color:#fff;font-size:22px;font-weight:800;text-shadow:0 2px 12px rgba(0,0,0,.5);z-index:2}
   .card .ph h3 small{display:block;font-size:13px;font-weight:600;opacity:.92}
@@ -896,10 +897,11 @@ function renderGrid(){
   if(!list.length){grid.innerHTML=`<div class="empty">🔍 No mountains found.</div>`;return}
   grid.innerHTML=list.map(m=>{
     const st=stats(m.id);
-    const bg=m.imgs&&m.imgs.length?`background-image:url("${m.imgs[0]}")`:`background-image:linear-gradient(135deg,${m.color[0]},${m.color[1]})`;
+    const gradBg=`background-image:linear-gradient(135deg,${m.color[0]},${m.color[1]})`;
+    const phImg=m.imgs&&m.imgs.length?`<img class="ph-img" src="${m.imgs[0]}" loading="lazy" onerror="this.remove()" alt="">` : "";
     const rate=st.count?`<span class="rate-mini">★ ${st.avg.toFixed(1)} <span style="color:var(--muted);font-weight:600">(${st.count})</span></span>`:`<span class="rate-mini"><span class="new">${t("new_badge")}</span></span>`;
     return `<article class="card" data-id="${m.id}">
-      <div class="ph" style="${bg}">
+      <div class="ph" style="${gradBg}">${phImg}
         ${m.yeongnam?`<span class="alps">${t("alps")}</span>`:""}
         <span class="elev">▲ ${m.elev.toLocaleString()}m</span>
         ${(()=>{const r=climbedRec(m.id);return r?`<span class="done${r.verified?"":" self"}">${r.verified?"📍 "+t("verified"):"🖊 "+t("selfreport")}</span>`:""})()}
@@ -923,7 +925,8 @@ async function openModal(id){
   const [,,wxData,photos]=await Promise.all([loadRatings(id),loadReviews(id),fetchWeather(m.lat,m.lng),loadPhotos(id)]);
   const loggedIn=!!session();
   const hasImg=m.imgs&&m.imgs.length;
-  const heroStyle=hasImg?`background-image:url("${m.imgs[0]}")`:`background-image:linear-gradient(135deg,${m.color[0]},${m.color[1]})`;
+  const heroGrad=`background-image:linear-gradient(135deg,${m.color[0]},${m.color[1]})`;
+  const heroImgTag=hasImg?`<img class="hero-img" src="${m.imgs[0]}" onerror="this.remove()" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0">`:"";
   const hi=(lang==="en"?m.hi_en:m.hi_ko).map(h=>`<li>${h}</li>`).join("");
   const naverUrl=`https://map.naver.com/p/search/${encodeURIComponent(m.ko)}`;
   const gUrl=`https://www.google.com/maps/search/?api=1&query=${m.lat},${m.lng}`;
@@ -931,7 +934,7 @@ async function openModal(id){
   const igUrl=`https://www.instagram.com/explore/tags/${encodeURIComponent(m.ko)}/`;
   const dy=0.05,dx=0.06;
   const osm=`https://www.openstreetmap.org/export/embed.html?bbox=${m.lng-dx}%2C${m.lat-dy}%2C${m.lng+dx}%2C${m.lat+dy}&layer=mapnik&marker=${m.lat}%2C${m.lng}`;
-  const thumbs=hasImg&&m.imgs.length>1?`<div class="thumbs" id="thumbs">${m.imgs.map((u,i)=>`<img src="${u}" data-i="${i}" class="${i===0?"sel":""}" loading="lazy">`).join("")}</div>`:"";
+  const thumbs=hasImg&&m.imgs.length>1?`<div class="thumbs" id="thumbs">${m.imgs.map((u,i)=>`<img src="${u}" data-i="${i}" class="${i===0?"sel":""}" loading="lazy" onerror="this.style.display='none'">`).join("")}</div>`:"";
   const st=stats(m.id);const mine=myRating(m.id);
   const avgDisplay=st.count?`<b>${st.avg.toFixed(1)}</b>${starHTML(Math.round(st.avg),false)}<span class="cnt">${st.count} ${t("ratings")}</span>`:`<b style="color:var(--muted)">–</b><span class="cnt">${t("new_badge")}</span>`;
   const yourSide=loggedIn?`<div class="yourrate"><div class="lbl">${t("your_rating")}</div>${starHTML(mine,true,m.id)}<div class="ratemsg" id="ratemsg"></div></div>`:`<div class="yourrate"><div class="lbl">${t("your_rating")}</div><span class="loginlink" id="rateLogin">${t("login_to_rate")}</span></div>`;
@@ -957,8 +960,8 @@ async function openModal(id){
   const ytEmbeds=rvs.map(r=>ytId(r.yt)).filter(Boolean).slice(0,3).map(vid=>`<div class="ytembed"><iframe src="https://www.youtube-nocookie.com/embed/${vid}" loading="lazy" allowfullscreen></iframe></div>`).join("");
   const igPosts=rvs.filter(r=>isIG(r.ig)).slice(0,4).map(r=>`<a class="btn btn-ig" style="flex:0 1 auto" href="${escapeHtml(r.ig)}" target="_blank" rel="noopener">📷 ${escapeHtml(r.nickname)}</a>`).join("");
   document.getElementById("modal").innerHTML=`
-    <div class="m-hero" style="${heroStyle}"><button class="close" id="closeBtn">✕</button>
-      <div class="titles"><h2>${mname(m)}<small>${lang==="en"?m.ko:m.en} · ${m.hanja}</small></h2></div></div>
+    <div class="m-hero" style="${heroGrad};overflow:hidden;position:relative">${heroImgTag}<button class="close" id="closeBtn" style="position:relative;z-index:2">✕</button>
+      <div class="titles" style="position:relative;z-index:2"><h2>${mname(m)}<small>${lang==="en"?m.ko:m.en} · ${m.hanja}</small></h2></div></div>
     <div class="m-body">
       ${thumbs}${climbBtn}
       <div class="quickstats">
@@ -1012,7 +1015,8 @@ async function openModal(id){
     </div>`;
   document.getElementById("closeBtn").onclick=closeModal;
   if(thumbs)document.getElementById("thumbs").querySelectorAll("img").forEach(img=>img.onclick=()=>{
-    document.querySelector(".m-hero").style.backgroundImage=`url("${m.imgs[+img.dataset.i]}")`;
+    const heroImg=document.querySelector(".m-hero .hero-img");
+    if(heroImg)heroImg.src=m.imgs[+img.dataset.i];
     document.querySelectorAll("#thumbs img").forEach(x=>x.classList.remove("sel"));img.classList.add("sel")});
   const cb=document.getElementById("climbBtn");
   if(cb)cb.onclick=()=>{
