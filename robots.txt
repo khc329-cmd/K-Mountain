@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://koreanmountain.netlify.app/sitemap.xml
