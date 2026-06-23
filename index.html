@@ -207,6 +207,8 @@
   .photo-grid img{width:100%;height:100%;object-fit:cover;cursor:pointer;transition:transform .2s}
   .photo-grid img:hover{transform:scale(1.04)}
   .photo-grid .pg-del{position:absolute;top:4px;right:4px;background:rgba(0,0,0,.55);color:#fff;border:none;border-radius:6px;padding:2px 6px;font-size:11px;cursor:pointer}
+  .photo-grid .pg-feat{position:absolute;top:4px;left:4px;background:rgba(0,0,0,.55);color:#fff;border:none;border-radius:6px;padding:2px 7px;font-size:14px;cursor:pointer;transition:background .15s}
+  .photo-grid .pg-feat.active{background:rgba(180,130,0,.85);color:#fff}
   .photo-grid .pg-who{position:absolute;bottom:0;left:0;right:0;padding:4px 6px;background:rgba(0,0,0,.45);color:#fff;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .upload-btn-wrap{margin-top:10px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
   .upload-btn{background:var(--gold);color:#3a2c08;border:none;border-radius:10px;padding:9px 18px;font-weight:700;font-size:13.5px;cursor:pointer}
@@ -480,6 +482,10 @@ let _climbed={};          // {mountainId:{verified,ts,dist}}
 let _ratingsCache={};     // {mountainId:{uid:score}}
 let _reviewsCache={};     // {mountainId:[...]}
 let _photosCache={};      // {mountainId:[{id,uid,nickname,url,path,ts}]}
+let _featuredPhotos={};   // {mountainId: url}  — loaded once from Firestore
+const ADMIN_EMAIL="khc329@gmail.com";
+function isAdmin(){return _user&&_user.email===ADMIN_EMAIL}
+function cardImgUrl(m){return _featuredPhotos[m.id]||(m.imgs&&m.imgs[0])||null}
 
 /* ── Helpers ── */
 const t=k=>I18N[lang][k]??k;
@@ -898,7 +904,8 @@ function renderGrid(){
   grid.innerHTML=list.map(m=>{
     const st=stats(m.id);
     const gradBg=`background-image:linear-gradient(135deg,${m.color[0]},${m.color[1]})`;
-    const phImg=m.imgs&&m.imgs.length?`<img class="ph-img" src="${m.imgs[0]}" loading="lazy" onerror="this.remove()" alt="">` : "";
+    const _cimg=cardImgUrl(m);
+    const phImg=_cimg?`<img class="ph-img" src="${_cimg}" loading="lazy" onerror="this.remove()" alt="">` : "";
     const rate=st.count?`<span class="rate-mini">★ ${st.avg.toFixed(1)} <span style="color:var(--muted);font-weight:600">(${st.count})</span></span>`:`<span class="rate-mini"><span class="new">${t("new_badge")}</span></span>`;
     return `<article class="card" data-id="${m.id}">
       <div class="ph" style="${gradBg}">${phImg}
@@ -926,7 +933,8 @@ async function openModal(id){
   const loggedIn=!!session();
   const hasImg=m.imgs&&m.imgs.length;
   const heroGrad=`background-image:linear-gradient(135deg,${m.color[0]},${m.color[1]})`;
-  const heroImgTag=hasImg?`<img class="hero-img" src="${m.imgs[0]}" onerror="this.remove()" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0">`:"";
+  const _heroImg=cardImgUrl(m);
+  const heroImgTag=_heroImg?`<img class="hero-img" src="${_heroImg}" onerror="this.remove()" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0">`:"";
   const hi=(lang==="en"?m.hi_en:m.hi_ko).map(h=>`<li>${h}</li>`).join("");
   const naverUrl=`https://map.naver.com/p/search/${encodeURIComponent(m.ko)}`;
   const gUrl=`https://www.google.com/maps/search/?api=1&query=${m.lat},${m.lng}`;
@@ -987,10 +995,12 @@ async function openModal(id){
         <h4>📸 ${t("photos_title")} (${photos.length})</h4>
         ${photos.length?`<div class="photo-grid" id="photoGrid">${photos.map(p=>{
           const canDel=session()&&session().uid===p.uid;
+          const isFeatured=_featuredPhotos[m.id]===p.url;
           return `<div class="pg-item" data-pid="${p.id}" data-path="${escapeHtml(p.path||"")}">
             <img src="${escapeHtml(p.url)}" loading="lazy" data-url="${escapeHtml(p.url)}">
             <div class="pg-who">${escapeHtml(p.nickname)}</div>
-            ${canDel?`<button class="pg-del" data-pid="${p.id}" data-path="${escapeHtml(p.path||"")}">${t("photos_del")}</button>`:""}</div>`;
+            ${canDel?`<button class="pg-del" data-pid="${p.id}" data-path="${escapeHtml(p.path||"")}">${t("photos_del")}</button>`:""}
+            ${isAdmin()?`<button class="pg-feat${isFeatured?" active":""}" data-url="${escapeHtml(p.url)}" title="${isFeatured?"대표사진":"대표사진으로 설정"}">${isFeatured?"⭐":"☆"}</button>`:""}</div>`;
         }).join("")}</div>`:`<div class="empty" style="padding:20px" id="photoGrid">${t("photos_none")}</div>`}
         ${loggedIn?`<div class="upload-btn-wrap">
           <button class="upload-btn" id="photoUploadBtn">${t("photos_upload")}</button>
@@ -1041,6 +1051,14 @@ async function openModal(id){
   });
   /* photo grid: lightbox on image click */
   document.querySelectorAll("#photoGrid img").forEach(img=>img.onclick=()=>openLightbox(img.dataset.url));
+  /* admin: set featured photo */
+  document.querySelectorAll(".pg-feat").forEach(btn=>btn.onclick=async()=>{
+    const url=btn.dataset.url;
+    const alreadyFeatured=_featuredPhotos[m.id]===url;
+    _featuredPhotos[m.id]=alreadyFeatured?null:url;
+    await db.collection("config").doc("featuredPhotos").set(_featuredPhotos);
+    renderGrid();openModal(m.id);
+  });
   /* photo delete buttons */
   document.querySelectorAll(".pg-del").forEach(btn=>btn.onclick=async()=>{
     if(!confirm(t("confirm_del")))return;
@@ -1262,6 +1280,14 @@ document.getElementById("authOverlay").onclick=e=>{if(e.target.id==="authOverlay
 document.getElementById("mapOverlay").onclick=e=>{if(e.target.id==="mapOverlay")closeMapModal()};
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeModal();closeAuth();closeCompForm();closeSOS();closeMapModal()}});
 applyLang();
+/* ── Load featured photos (admin-selected) once on boot ── */
+(async()=>{
+  try{
+    const doc=await db.collection("config").doc("featuredPhotos").get();
+    if(doc.exists)_featuredPhotos=doc.data()||{};
+  }catch{}
+  renderGrid();
+})();
 </script>
 <script>if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});</script>
 </body>
