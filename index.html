@@ -1285,12 +1285,12 @@ function openFeedbackForm(){
     <div class="fh"><button class="close" id="fbClose">✕</button><h3>💬 ${t("fb_title")}</h3><p>${t("fb_intro")}</p></div>
     <div class="fbody"><div class="ferr" id="fberr"></div>
       <div class="field"><label>${t("fb_type")}</label>
-        <select id="fb_type" style="background:var(--m900);color:var(--text);border:1px solid var(--m700);border-radius:8px;padding:10px;width:100%">
+        <select id="fb_type" style="background:#fff;color:#111;border:1px solid #ccc;border-radius:8px;padding:10px;width:100%">
           <option value="bug">${t("fb_type_bug")}</option>
           <option value="mtn">${t("fb_type_mtn")}</option>
         </select></div>
       <div class="field"><label>${t("fb_ttl")}</label><input id="fb_ttl" type="text" maxlength="80" placeholder="${lang==="ko"?"예: 정병산 추가 부탁드려요":"e.g. Please add Jeongbyeongsan"}"></div>
-      <div class="field"><label>${t("fb_body")}</label><textarea id="fb_body" rows="4" style="width:100%;background:var(--m900);color:var(--text);border:1px solid var(--m700);border-radius:8px;padding:10px;resize:vertical;box-sizing:border-box" maxlength="1000" placeholder="${lang==="ko"?"자세한 내용을 적어주세요 (선택)":"Additional details (optional)"}"></textarea></div>
+      <div class="field"><label>${t("fb_body")}</label><textarea id="fb_body" rows="4" style="width:100%;background:#fff;color:#111;border:1px solid #ccc;border-radius:8px;padding:10px;resize:vertical;box-sizing:border-box" maxlength="1000" placeholder="${lang==="ko"?"자세한 내용을 적어주세요 (선택)":"Additional details (optional)"}"></textarea></div>
       <div style="display:flex;gap:10px;margin-top:4px">
         <button class="navbtn" id="fbCancelBtn" style="flex:1">${t("fb_cancel")}</button>
         <button class="navbtn solid" id="fbSubmitBtn" style="flex:2;color:#3a2c08">${t("fb_submit")}</button>
