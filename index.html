@@ -1296,12 +1296,12 @@ function openFeedbackForm(){
         <button class="navbtn solid" id="fbSubmitBtn" style="flex:2;color:#3a2c08">${t("fb_submit")}</button>
       </div>
     </div>`;
-  document.getElementById("feedbackOverlay").classList.add("on");
+  document.getElementById("feedbackOverlay").classList.add("open");
   document.getElementById("fbClose").onclick=closeFeedbackForm;
   document.getElementById("fbCancelBtn").onclick=closeFeedbackForm;
   document.getElementById("fbSubmitBtn").onclick=submitFeedback;
 }
-function closeFeedbackForm(){document.getElementById("feedbackOverlay").classList.remove("on")}
+function closeFeedbackForm(){document.getElementById("feedbackOverlay").classList.remove("open")}
 async function submitFeedback(){
   const s=session(); if(!s)return;
   const err=document.getElementById("fberr");
@@ -1361,7 +1361,7 @@ document.getElementById("langBtn").onclick=()=>{lang=lang==="en"?"ko":"en";apply
 document.getElementById("search").addEventListener("input",e=>{query=e.target.value;renderGrid()});
 document.getElementById("authOverlay").onclick=e=>{if(e.target.id==="authOverlay")closeAuth()};
 document.getElementById("mapOverlay").onclick=e=>{if(e.target.id==="mapOverlay")closeMapModal()};
-document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeModal();closeAuth();closeCompForm();closeSOS();closeMapModal()}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeModal();closeAuth();closeCompForm();closeFeedbackForm();closeSOS();closeMapModal()}});
 applyLang();
 /* ── Load featured photos (admin-selected) once on boot ── */
 (async()=>{
