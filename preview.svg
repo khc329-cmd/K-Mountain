@@ -1,0 +1,123 @@
+<svg viewBox="0 0 720 480" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Korean Peaks 사이트 대표 이미지</title>
+  <desc>K-Mountain 한국의 명산 200 웹사이트 프리뷰 이미지</desc>
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d5a3d"/>
+      <stop offset="60%" stop-color="#1e3d2a"/>
+      <stop offset="100%" stop-color="#0d2016"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a7c59"/>
+      <stop offset="100%" stop-color="#2d5a3d"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a7a8c"/>
+      <stop offset="100%" stop-color="#2e3f4a"/>
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a8a5c"/>
+      <stop offset="100%" stop-color="#33432a"/>
+    </linearGradient>
+    <linearGradient id="cardGrad4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8893f"/>
+      <stop offset="100%" stop-color="#4a3a18"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="480" rx="16" fill="#eef3ec"/>
+
+  <!-- HEADER -->
+  <rect x="0" y="0" width="720" height="52" fill="#2d5a3d"/>
+  <text x="20" y="22" font-size="22" fill="white">⛰️</text>
+  <text x="48" y="22" font-size="15" font-weight="800" fill="white" font-family="'Segoe UI',sans-serif">Korean Peaks</text>
+  <text x="48" y="36" font-size="9" fill="#a8c8b0" font-family="'Segoe UI',sans-serif" letter-spacing="1.5">한국의 명산 200</text>
+  <text x="280" y="31" font-size="11" font-weight="700" fill="white" font-family="'Segoe UI',sans-serif">명산</text>
+  <line x1="280" y1="48" x2="304" y2="48" stroke="#d9a441" stroke-width="2.5"/>
+  <text x="330" y="31" font-size="11" fill="#a8c8b0" font-family="'Segoe UI',sans-serif">랭킹</text>
+  <text x="370" y="31" font-size="11" fill="#a8c8b0" font-family="'Segoe UI',sans-serif">동행구함</text>
+  <text x="432" y="31" font-size="11" fill="#a8c8b0" font-family="'Segoe UI',sans-serif">하이킹 코스</text>
+  <rect x="626" y="14" width="56" height="24" rx="12" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.5"/>
+  <text x="654" y="30" font-size="10" fill="white" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-weight="700">로그인</text>
+
+  <!-- HERO -->
+  <rect x="0" y="52" width="720" height="148" fill="url(#skyGrad)"/>
+  <path d="M0 200 L0 140 L80 80 L160 120 L240 55 L340 110 L420 40 L510 100 L580 65 L650 95 L720 60 L720 200Z" fill="#1a4028" opacity="0.8"/>
+  <path d="M0 200 L0 155 L120 110 L200 140 L300 90 L400 145 L480 105 L560 135 L640 115 L720 130 L720 200Z" fill="#0d2016" opacity="0.9"/>
+  <text x="360" y="102" font-size="26" font-weight="800" fill="white" text-anchor="middle" font-family="'Segoe UI',sans-serif">한국의</text>
+  <text x="360" y="134" font-size="26" font-weight="800" fill="#d9a441" text-anchor="middle" font-family="'Segoe UI',sans-serif">명산, 정복하기</text>
+  <text x="230" y="172" font-size="22" font-weight="800" fill="#d9a441" text-anchor="middle" font-family="'Segoe UI',sans-serif">200</text>
+  <text x="230" y="186" font-size="9" fill="rgba(255,255,255,.8)" text-anchor="middle" font-family="'Segoe UI',sans-serif" letter-spacing="1">명산</text>
+  <text x="360" y="172" font-size="22" font-weight="800" fill="#d9a441" text-anchor="middle" font-family="'Segoe UI',sans-serif">25</text>
+  <text x="360" y="186" font-size="9" fill="rgba(255,255,255,.8)" text-anchor="middle" font-family="'Segoe UI',sans-serif" letter-spacing="1">국립공원</text>
+  <text x="490" y="172" font-size="22" font-weight="800" fill="#d9a441" text-anchor="middle" font-family="'Segoe UI',sans-serif">1947m</text>
+  <text x="490" y="186" font-size="9" fill="rgba(255,255,255,.8)" text-anchor="middle" font-family="'Segoe UI',sans-serif" letter-spacing="1">최고봉</text>
+
+  <!-- MOUNTAIN CARDS -->
+  <rect x="18" y="220" width="158" height="128" rx="14" fill="url(#cardGrad2)"/>
+  <text x="28" y="250" font-size="22" fill="white">🏔️</text>
+  <rect x="28" y="265" width="36" height="15" rx="4" fill="#e05252"/>
+  <text x="33" y="276" font-size="8.5" fill="white" font-weight="700" font-family="'Segoe UI',sans-serif">어려움</text>
+  <text x="28" y="300" font-size="15" font-weight="800" fill="white" font-family="'Segoe UI',sans-serif">설악산</text>
+  <text x="28" y="314" font-size="9" fill="rgba(255,255,255,.75)" font-family="'Segoe UI',sans-serif">Seoraksan · 1,708m</text>
+  <text x="28" y="328" font-size="9" fill="#d9a441" font-family="'Segoe UI',sans-serif">강원 속초</text>
+  <text x="100" y="328" font-size="10" fill="#d9a441">★★★★★</text>
+
+  <rect x="190" y="220" width="158" height="128" rx="14" fill="url(#cardGrad1)"/>
+  <text x="200" y="250" font-size="22" fill="white">🌋</text>
+  <rect x="200" y="265" width="36" height="15" rx="4" fill="#e05252"/>
+  <text x="205" y="276" font-size="8.5" fill="white" font-weight="700" font-family="'Segoe UI',sans-serif">어려움</text>
+  <text x="200" y="300" font-size="15" font-weight="800" fill="white" font-family="'Segoe UI',sans-serif">한라산</text>
+  <text x="200" y="314" font-size="9" fill="rgba(255,255,255,.75)" font-family="'Segoe UI',sans-serif">Hallasan · 1,947m</text>
+  <text x="200" y="328" font-size="9" fill="#d9a441" font-family="'Segoe UI',sans-serif">제주도</text>
+  <text x="272" y="328" font-size="10" fill="#d9a441">★★★★★</text>
+
+  <rect x="362" y="220" width="158" height="128" rx="14" fill="url(#cardGrad3)"/>
+  <text x="372" y="250" font-size="22" fill="white">⛰️</text>
+  <rect x="372" y="265" width="36" height="15" rx="4" fill="#e05252"/>
+  <text x="377" y="276" font-size="8.5" fill="white" font-weight="700" font-family="'Segoe UI',sans-serif">어려움</text>
+  <text x="372" y="300" font-size="15" font-weight="800" fill="white" font-family="'Segoe UI',sans-serif">지리산</text>
+  <text x="372" y="314" font-size="9" fill="rgba(255,255,255,.75)" font-family="'Segoe UI',sans-serif">Jirisan · 1,915m</text>
+  <text x="372" y="328" font-size="9" fill="#d9a441" font-family="'Segoe UI',sans-serif">전남·경남</text>
+  <text x="444" y="328" font-size="10" fill="#d9a441">★★★★☆</text>
+
+  <rect x="534" y="220" width="168" height="128" rx="14" fill="url(#cardGrad4)"/>
+  <text x="544" y="250" font-size="22" fill="white">🌾</text>
+  <rect x="544" y="265" width="36" height="15" rx="4" fill="#e8a030"/>
+  <text x="549" y="276" font-size="8.5" fill="white" font-weight="700" font-family="'Segoe UI',sans-serif">보통</text>
+  <text x="544" y="300" font-size="15" font-weight="800" fill="white" font-family="'Segoe UI',sans-serif">신불산</text>
+  <text x="544" y="314" font-size="9" fill="rgba(255,255,255,.75)" font-family="'Segoe UI',sans-serif">Sinbulsan · 1,159m</text>
+  <text x="544" y="328" font-size="9" fill="#d9a441" font-family="'Segoe UI',sans-serif">영남알프스</text>
+  <text x="616" y="328" font-size="10" fill="#d9a441">★★★★☆</text>
+
+  <!-- BOTTOM STRIP -->
+  <rect x="0" y="376" width="720" height="104" fill="white"/>
+
+  <text x="24" y="400" font-size="12" font-weight="800" fill="#1c2620" font-family="'Segoe UI',sans-serif">🏆 등반가 랭킹</text>
+  <rect x="24" y="408" width="220" height="20" rx="6" fill="#f6faf5"/>
+  <text x="34" y="421" font-size="10" fill="#1c2620" font-family="'Segoe UI',sans-serif">🥇  산악대왕</text>
+  <text x="210" y="421" font-size="10" fill="#d9a441" text-anchor="end" font-weight="700" font-family="'Segoe UI',sans-serif">2,840P</text>
+  <rect x="24" y="432" width="220" height="20" rx="6" fill="#f6faf5"/>
+  <text x="34" y="445" font-size="10" fill="#1c2620" font-family="'Segoe UI',sans-serif">🥈  고봉정복자</text>
+  <text x="210" y="445" font-size="10" fill="#5d6b62" text-anchor="end" font-weight="700" font-family="'Segoe UI',sans-serif">1,650P</text>
+  <rect x="24" y="456" width="220" height="20" rx="6" fill="#f6faf5"/>
+  <text x="34" y="469" font-size="10" fill="#1c2620" font-family="'Segoe UI',sans-serif">🥉  능선탐험가</text>
+  <text x="210" y="469" font-size="10" fill="#5d6b62" text-anchor="end" font-weight="700" font-family="'Segoe UI',sans-serif">1,120P</text>
+
+  <rect x="270" y="395" width="130" height="38" rx="10" fill="#eef3ec" stroke="#c9dec1" stroke-width="1"/>
+  <text x="285" y="411" font-size="9" fill="#2d5a3d" font-family="'Segoe UI',sans-serif">📍 GPS 현장 인증</text>
+  <text x="285" y="425" font-size="9" fill="#5d6b62" font-family="'Segoe UI',sans-serif">정상 도착 포인트 획득</text>
+  <rect x="270" y="440" width="130" height="38" rx="10" fill="#eef3ec" stroke="#c9dec1" stroke-width="1"/>
+  <text x="285" y="456" font-size="9" fill="#2d5a3d" font-family="'Segoe UI',sans-serif">✍️ 리뷰 &amp; 별점</text>
+  <text x="285" y="470" font-size="9" fill="#5d6b62" font-family="'Segoe UI',sans-serif">등반 경험 공유하기</text>
+
+  <rect x="430" y="390" width="268" height="86" rx="12" fill="#2d5a3d"/>
+  <text x="450" y="415" font-size="13" font-weight="800" fill="white" font-family="'Segoe UI',sans-serif">Korean Peaks</text>
+  <text x="450" y="432" font-size="9" fill="#a8c8b0" font-family="'Segoe UI',sans-serif">한국 명산 200개 완벽 가이드</text>
+  <text x="450" y="448" font-size="9" fill="#a8c8b0" font-family="'Segoe UI',sans-serif">GPS 인증 · 리뷰 · 랭킹 · 동행</text>
+  <rect x="450" y="456" width="160" height="16" rx="8" fill="#d9a441"/>
+  <text x="530" y="467" font-size="9" font-weight="700" fill="#3a2c08" text-anchor="middle" font-family="'Segoe UI',sans-serif">k-mountain.champrime.kr</text>
+
+  <text x="672" y="460" font-size="28" opacity=".18">⛰️</text>
+</svg>
