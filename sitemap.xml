@@ -2,955 +2,967 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://k-mountain.champrime.kr/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=seoraksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://k-mountain.champrime.kr/mountain/seoraksan/</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://k-mountain.champrime.kr/mountain/hallasan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=hallasan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/jirisan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=jirisan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/bukhansan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=bukhansan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/naejangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=naejangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/deogyusan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=deogyusan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/mudeungsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=mudeungsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/sobaeksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=sobaeksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/wolchulsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=wolchulsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/taebaeksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=taebaeksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/songnisan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=songnisan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gwanaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gwanaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gajisan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gajisan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/sinbulsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=sinbulsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/ganwolsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=ganwolsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/goheonsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=goheonsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/cheonhwangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=cheonhwangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/odaesan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=odaesan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/chiaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=chiaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/juwangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=juwangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gayasan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gayasan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gyeryongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gyeryongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/dobongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=dobongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/palgongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=palgongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/geumjeongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=geumjeongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/daedunsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=daedunsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/hwangmaesan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=hwangmaesan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/biseulsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=biseulsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/manisan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=manisan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/inwangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=inwangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/suraksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=suraksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/bulamsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=bulamsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/achasan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=achasan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/cheongyesan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=cheongyesan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/bugaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=bugaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/soyosan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=soyosan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/yongmunsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=yongmunsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gwangyosan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gwangyosan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/myeongjisan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=myeongjisan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/unaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=unaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/hwaaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=hwaaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/yumyeongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=yumyeongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/surisan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=surisan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gyeyangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gyeyangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/dutasan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=dutasan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gariwangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gariwangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/bangtaesan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=bangtaesan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/samaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=samaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/taegisan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=taegisan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/hambaeksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=hambaeksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/wolaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=wolaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/minjujisan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=minjujisan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/seodaesan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=seodaesan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/oseosan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=oseosan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/deoksungsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=deoksungsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/maisan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=maisan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/unjansan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=unjansan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/jangansan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=jangansan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/duryunsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=duryunsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/jogyesan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=jogyesan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/cheongwansan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=cheongwansan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/palyeongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=palyeongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/baegusan_jeonnam/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=baegusan_jeonnam</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/yeongtwitsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=yeongtwitsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/cheongnyansan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=cheongnyansan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/hwangaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=hwangaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/irwolsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=irwolsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/juheulsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=juheulsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/geumoosan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=geumoosan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gyeongju_namsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gyeongju_namsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/hwangseoksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=hwangseoksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/cheonseongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=cheonseongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/geumsan_namhae/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=geumsan_namhae</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/yeonhwasan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=yeonhwasan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/mireuksan_tongyeong/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=mireuksan_tongyeong</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/jangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=jangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/hwangnyeongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=hwangnyeongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/seunghaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=seunghaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/apsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=apsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/munsusan_ulsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=munsusan_ulsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/sikjangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=sikjangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/wonsusan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=wonsusan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/sanbangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=sanbangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/seongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=seongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/daeamsan_cw/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=daeamsan_cw</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/cheonjusan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=cheonjusan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/jangboksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=jangboksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/deokjubong/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=bulmosan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/bulmosan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=jeongbyeongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/jeongbyeongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=bieumsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/bieumsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=muhaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/muhaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=cheongnyangsan_cw</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/cheongnyangsan_cw/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=pallyongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/pallyongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=jehwangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/jehwangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=jaebyaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/jaebyaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=unmusan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/unmusan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=yeongchuksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/yeongchuksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=daeyasan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/daeyasan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=huiyansan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/huiyansan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=hwangjangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/hwangjangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=joryeongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/joryeongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=bohyeonsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/bohyeonsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=naeyeonsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/naeyeonsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gunjasan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gunjasan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=domyeongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/domyeongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gubyeongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gubyeongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=doraksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/doraksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gamaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gamaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=myeongseongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/myeongseongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gwangdeoksan_gg</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gwangdeoksan_gg/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=yeoninsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/yeoninsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=cheonmasan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/cheonmasan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=namhansanseong</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/namhansanseong/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gyebangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gyebangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=mindungsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/mindungsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=deokahngsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/deokahngsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=cheongoksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/cheongoksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=baegunsan_gw</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/baegunsan_gw/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gangcheonsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gangcheonsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=seonunsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/seonunsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=byeonsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/byeonsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=moaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/moaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gubongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gubongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=baegamsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/baegamsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=chuwolsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/chuwolsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=dalmasan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/dalmasan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=chilgapsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/chilgapsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=yongbongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/yongbongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=seongjusan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/seongjusan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=geumwonsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/geumwonsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gibaeksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gibaeksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=bigung_hamyang</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/bigung_hamyang/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=ungseokbong</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/ungseokbong/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=obongsan_cw</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/obongsan_cw/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=bawangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/bawangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=maebongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/maebongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=baegunsan_gg</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/baegunsan_gg/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=geumhaksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/geumhaksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gungnamsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gungnamsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=yongmasan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/yongmasan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=ansan_seoul</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/ansan_seoul/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=poamsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/poamsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=munboksan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/munboksan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=cheonghwasan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/cheonghwasan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=hwawangsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/hwawangsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=geumosan_gyeongnam</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/geumosan_gyeongnam/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=daeamsan_ij</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/daeamsan_ij/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=dobongsan_ob</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/dobongsan_ob/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=geumseonsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/geumseonsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=byeongpungsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/byeongpungsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=gayasan_cn</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/gayasan_cn/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=baeam</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/baeam/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=munsuhan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/munsuhan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=sinsunbong</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/sinsunbong/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=hyangrobong</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/hyangrobong/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=geomdansan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/geomdansan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=yebongsan</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/yebongsan/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://k-mountain.champrime.kr/#mountain=munsuhan_jb</loc>
-    <lastmod>2026-07-05</lastmod>
+    <loc>https://k-mountain.champrime.kr/mountain/munsuhan_jb/</loc>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
