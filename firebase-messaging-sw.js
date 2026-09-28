@@ -15,7 +15,7 @@ const messaging = firebase.messaging();
 // Background message handler (tab closed or in background)
 messaging.onBackgroundMessage(payload => {
   const n = payload.notification || {};
-  self.registration.showNotification(n.title || 'Korean Peaks', {
+  self.registration.showNotification(n.title || '산마루', {
     body: n.body || '',
     icon: '/icon-192.png',
     badge: '/icon-192.png',

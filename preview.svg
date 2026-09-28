@@ -1,5 +1,5 @@
 <svg viewBox="0 0 720 480" xmlns="http://www.w3.org/2000/svg" role="img">
-  <title>Korean Peaks 사이트 대표 이미지</title>
+  <title>산마루 사이트 대표 이미지</title>
   <desc>K-Mountain 한국의 명산 200 웹사이트 프리뷰 이미지</desc>
   <defs>
     <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
@@ -31,7 +31,7 @@
   <!-- HEADER -->
   <rect x="0" y="0" width="720" height="52" fill="#2d5a3d"/>
   <text x="20" y="22" font-size="22" fill="white">⛰️</text>
-  <text x="48" y="22" font-size="15" font-weight="800" fill="white" font-family="'Segoe UI',sans-serif">Korean Peaks</text>
+  <text x="48" y="22" font-size="15" font-weight="800" fill="white" font-family="'Malgun Gothic','Segoe UI',sans-serif">산마루</text>
   <text x="48" y="36" font-size="9" fill="#a8c8b0" font-family="'Segoe UI',sans-serif" letter-spacing="1.5">한국의 명산 200</text>
   <text x="280" y="31" font-size="11" font-weight="700" fill="white" font-family="'Segoe UI',sans-serif">명산</text>
   <line x1="280" y1="48" x2="304" y2="48" stroke="#d9a441" stroke-width="2.5"/>
@@ -113,7 +113,7 @@
   <text x="285" y="470" font-size="9" fill="#5d6b62" font-family="'Segoe UI',sans-serif">등반 경험 공유하기</text>
 
   <rect x="430" y="390" width="268" height="86" rx="12" fill="#2d5a3d"/>
-  <text x="450" y="415" font-size="13" font-weight="800" fill="white" font-family="'Segoe UI',sans-serif">Korean Peaks</text>
+  <text x="450" y="415" font-size="13" font-weight="800" fill="white" font-family="'Malgun Gothic','Segoe UI',sans-serif">산마루</text>
   <text x="450" y="432" font-size="9" fill="#a8c8b0" font-family="'Segoe UI',sans-serif">한국 명산 200개 완벽 가이드</text>
   <text x="450" y="448" font-size="9" fill="#a8c8b0" font-family="'Segoe UI',sans-serif">GPS 인증 · 리뷰 · 랭킹 · 동행</text>
   <rect x="450" y="456" width="160" height="16" rx="8" fill="#d9a441"/>
