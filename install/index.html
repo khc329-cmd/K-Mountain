@@ -52,7 +52,7 @@ b{color:#E7B64B}
   <ol>
     <li>오른쪽 아래 <b>⋯</b> 버튼을 누르세요</li>
     <li><b>다른 브라우저로 열기</b>를 선택하세요</li>
-    <li>열린 화면에서 아래 안내를 따라 하면 됩니다</li>
+    <li>열린 브라우저에서 <b>홈 화면에 추가</b>하면 끝입니다</li>
   </ol>
   <a class="btn" id="btnChrome" style="margin-top:14px" href="#">크롬으로 열기</a>
   <div class="hint">버튼이 안 되면 위 ⋯ 메뉴를 이용해 주세요.</div>
@@ -110,6 +110,21 @@ b{color:#E7B64B}
   if (standalone) { show("paneDone"); return; }
   if (isKakao) {
     show("paneKakao");
+    // 브라우저로 옮긴 뒤 할 일도 미리 보여준다 (안내가 끊기지 않도록)
+    // 미리보기 파라미터와 무관하게 실제 기기로 판단한다
+    var realIOS = /iPhone|iPad|iPod/i.test(ua), realAndroid = /Android/i.test(ua);
+    var osPane = realIOS ? "paneIos" : (realAndroid ? "paneAndroid" : null);
+    if (osPane) {
+      show(osPane);
+      var h = document.querySelector("#" + osPane + " h2");
+      if (h) h.textContent = realIOS ? "브라우저로 연 뒤 — 아이폰" : "브라우저로 연 뒤 — 안드로이드";
+      if (osPane === "paneAndroid") {
+        var ib = document.getElementById("btnInstall"); if (ib) ib.style.display = "none";
+        var am = document.getElementById("androidManual");
+        if (am) am.innerHTML = "크롬에서 열면 <b>홈 화면에 추가</b> 버튼이 나타납니다. 안 보이면 메뉴(⋮)에서 <b>앱 설치</b>를 눌러주세요.";
+      }
+      if (osPane === "paneIos") { var w2 = document.getElementById("iosSafariWarn"); if (w2) w2.style.display = "none"; }
+    }
     var b = document.getElementById("btnChrome");
     if (/Android/i.test(ua)) {   // 카톡 안내는 미리보기 파라미터와 무관하게 실제 기기로 판단한다
       // 안드로이드는 intent 로 크롬을 바로 띄울 수 있다
