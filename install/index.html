@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>산마루 홈 화면에 추가하기</title>
+<meta name="description" content="설치 없이 폰 홈 화면에 산마루를 추가하세요. 한국의 명산 160곳, GPS 등반 인증."/>
+<link rel="manifest" href="/manifest.json"/>
+<link rel="apple-touch-icon" href="/icon-192.png"/>
+<link rel="icon" href="/icon-192.png"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="산마루 — 폰에 추가하고 바로 쓰세요"/>
+<meta property="og:description" content="한국의 명산 160곳, 정상에서 GPS 등반 인증. 앱 설치 없이 홈 화면에 추가하면 끝."/>
+<meta property="og:image" content="https://k-mountain.champrime.kr/share-install.png"/>
+<meta property="og:image:width" content="800"/>
+<meta property="og:image:height" content="420"/>
+<meta property="og:url" content="https://k-mountain.champrime.kr/install"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0A3D2B;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+  display:flex;flex-direction:column;align-items:center;padding:28px 20px 48px;min-height:100vh}
+.logo{width:84px;height:84px;border-radius:22px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+h1{font-size:25px;font-weight:900;margin:16px 0 6px;text-align:center;letter-spacing:-.4px}
+.sub{font-size:14px;color:rgba(255,255,255,.78);text-align:center;line-height:1.55;margin-bottom:22px}
+.card{width:100%;max-width:400px;background:rgba(255,255,255,.07);border:1px solid rgba(231,182,75,.3);
+  border-radius:18px;padding:20px;margin-bottom:14px}
+.card h2{font-size:16px;font-weight:800;margin:0 0 12px;color:#E7B64B}
+ol{margin:0;padding-left:20px}
+li{font-size:14.5px;line-height:1.75;margin-bottom:6px}
+b{color:#E7B64B}
+.btn{display:block;width:100%;border:none;border-radius:50px;padding:16px;font-size:16px;font-weight:800;
+  cursor:pointer;background:linear-gradient(135deg,#E7B64B,#c9992f);color:#3a2c08;text-align:center;text-decoration:none}
+.btn.ghost{background:none;border:1px solid rgba(255,255,255,.35);color:#fff;font-weight:700;font-size:14.5px;padding:13px}
+.btn+.btn{margin-top:9px}
+.hint{font-size:12.5px;color:rgba(255,255,255,.6);text-align:center;margin-top:10px;line-height:1.6}
+.feat{display:flex;gap:7px;flex-wrap:wrap;justify-content:center;margin-bottom:22px}
+.feat span{font-size:12.5px;background:rgba(255,255,255,.1);border-radius:50px;padding:6px 12px}
+.qr{background:#fff;border-radius:14px;padding:12px;width:172px;margin:0 auto 10px}
+.qr svg{width:100%;height:auto;display:block}
+.share-ico{display:inline-block;width:17px;height:17px;vertical-align:-3px;margin:0 2px}
+.foot{font-size:12px;color:rgba(255,255,255,.45);margin-top:22px;text-align:center;line-height:1.7}
+.foot a{color:rgba(255,255,255,.7)}
+.hide{display:none}
+</style></head><body>
+<img class="logo" src="/icon-192.png" alt="산마루"/>
+<h1>산마루를 폰에 추가하세요</h1>
+<div class="sub">앱 설치 없이 홈 화면에서 바로 열립니다.<br/>용량도 거의 차지하지 않아요.</div>
+<div class="feat"><span>⛰ 명산 160곳</span><span>📍 GPS 등반 인증</span><span>🏅 뱃지·랭킹</span><span>무료 · 광고 없음</span></div>
+
+<div id="paneKakao" class="card hide">
+  <h2>카카오톡에서는 추가할 수 없어요</h2>
+  <ol>
+    <li>오른쪽 아래 <b>⋯</b> 버튼을 누르세요</li>
+    <li><b>다른 브라우저로 열기</b>를 선택하세요</li>
+    <li>열린 화면에서 아래 안내를 따라 하면 됩니다</li>
+  </ol>
+  <a class="btn" id="btnChrome" style="margin-top:14px" href="#">크롬으로 열기</a>
+  <div class="hint">버튼이 안 되면 위 ⋯ 메뉴를 이용해 주세요.</div>
+</div>
+
+<div id="paneAndroid" class="card hide">
+  <h2>한 번에 추가하기</h2>
+  <button class="btn" id="btnInstall">홈 화면에 추가</button>
+  <div class="hint" id="androidManual">버튼이 안 보이면 브라우저 메뉴(⋮)에서
+    <b>앱 설치</b> 또는 <b>홈 화면에 추가</b>를 눌러주세요.</div>
+</div>
+
+<div id="paneIos" class="card hide">
+  <h2>아이폰에서 추가하기</h2>
+  <ol>
+    <li>화면 아래 <b>공유<svg class="share-ico" viewBox="0 0 24 24" fill="none" stroke="#E7B64B" stroke-width="2"><path d="M12 16V4M12 4l-4 4M12 4l4 4"/><path d="M4 14v5a1 1 0 001 1h14a1 1 0 001-1v-5"/></svg>버튼</b>을 누르세요</li>
+    <li>목록을 내려 <b>홈 화면에 추가</b>를 선택하세요</li>
+    <li>오른쪽 위 <b>추가</b>를 누르면 끝입니다</li>
+  </ol>
+  <div class="hint" id="iosSafariWarn">사파리에서만 추가할 수 있어요. 크롬 등 다른 브라우저로 보고 계시면 사파리로 열어주세요.</div>
+</div>
+
+<div id="paneDesktop" class="card hide">
+  <h2>폰으로 열어보세요</h2>
+  <div class="qr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 148" class="segno"><path transform="scale(4)" class="qrline" stroke="#0a3d2b" d="M4 4.5h7m1 0h2m2 0h3m3 0h1m3 0h7m-29 1h1m5 0h1m1 0h1m2 0h4m4 0h1m2 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h3m3 0h1m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h2m1 0h2m3 0h1m2 0h1m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h2m1 0h2m1 0h1m2 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m2 0h2m1 0h1m1 0h1m2 0h2m3 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-20 1h1m1 0h5m2 0h3m-21 1h1m2 0h7m2 0h1m1 0h2m1 0h1m3 0h1m2 0h1m1 0h3m-26 1h1m1 0h1m4 0h2m1 0h3m3 0h1m1 0h1m1 0h2m1 0h2m-24 1h3m2 0h1m1 0h2m2 0h1m2 0h1m7 0h1m-26 1h3m4 0h5m2 0h1m1 0h3m1 0h2m2 0h1m2 0h1m-29 1h3m2 0h2m1 0h2m1 0h1m1 0h2m1 0h1m2 0h2m1 0h2m4 0h1m-29 1h2m3 0h1m1 0h1m1 0h1m2 0h7m3 0h7m-27 1h1m1 0h4m1 0h5m1 0h1m2 0h2m3 0h2m1 0h1m1 0h1m-29 1h2m1 0h1m6 0h2m2 0h1m1 0h1m2 0h1m3 0h1m2 0h1m1 0h1m-25 1h1m1 0h1m4 0h2m1 0h1m4 0h2m2 0h1m1 0h1m-26 1h2m2 0h1m2 0h1m1 0h5m1 0h1m2 0h2m1 0h1m2 0h1m1 0h2m-28 1h2m2 0h4m2 0h1m1 0h1m2 0h1m1 0h1m1 0h2m1 0h1m1 0h2m2 0h1m-29 1h4m1 0h1m2 0h3m1 0h1m1 0h3m6 0h1m1 0h2m-27 1h2m3 0h2m2 0h1m2 0h3m1 0h2m2 0h8m-20 1h2m2 0h1m1 0h3m1 0h1m1 0h1m3 0h2m-26 1h7m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h2m1 0h1m1 0h2m-26 1h1m5 0h1m1 0h1m5 0h4m1 0h2m3 0h1m2 0h1m-28 1h1m1 0h3m1 0h1m1 0h3m1 0h4m2 0h8m2 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m2 0h4m1 0h2m6 0h1m-29 1h1m1 0h3m1 0h1m3 0h3m1 0h2m1 0h1m1 0h3m2 0h1m1 0h3m-29 1h1m5 0h1m2 0h1m2 0h5m1 0h1m3 0h2m1 0h2m1 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m4 0h2m2 0h1"/></svg>
+</div>
+  <div class="hint">폰 카메라로 QR을 찍으면 이 페이지가 열립니다.</div>
+  <a class="btn ghost" style="margin-top:12px" href="/">PC에서 그냥 둘러보기</a>
+</div>
+
+<div id="paneDone" class="card hide">
+  <h2>이미 추가되어 있어요 🎉</h2>
+  <a class="btn" href="/">산마루 열기</a>
+</div>
+
+<a class="btn ghost" style="max-width:400px" href="/">먼저 둘러보기</a>
+
+<div class="foot">
+  산마루 · <a href="https://k-mountain.champrime.kr">k-mountain.champrime.kr</a><br/>
+  안드로이드 앱도 준비 중입니다
+</div>
+
+<script>
+(function(){
+  var ua = navigator.userAgent || "";
+  // ?as=android|ios|kakao|desktop — 안내 화면을 강제로 띄운다(테스트·지원용)
+  var force = (location.search.match(/[?&]as=(android|ios|kakao|desktop)/) || [])[1];
+  var isKakao = force ? force === "kakao" : /KAKAOTALK/i.test(ua);
+  var isIOS = force ? force === "ios" : (/iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1));
+  var isAndroid = force ? force === "android" : /Android/i.test(ua);
+  var isSafari = /Safari/i.test(ua) && !/CriOS|FxiOS|EdgiOS|KAKAOTALK|NAVER|Whale/i.test(ua);
+  var standalone = !force && (window.matchMedia("(display-mode: standalone)").matches || navigator.standalone === true);
+  function show(id){ var el = document.getElementById(id); if (el) el.classList.remove("hide"); }
+
+  if (standalone) { show("paneDone"); return; }
+  if (isKakao) {
+    show("paneKakao");
+    var b = document.getElementById("btnChrome");
+    if (/Android/i.test(ua)) {   // 카톡 안내는 미리보기 파라미터와 무관하게 실제 기기로 판단한다
+      // 안드로이드는 intent 로 크롬을 바로 띄울 수 있다
+      b.href = "intent://" + location.host + "/install#Intent;scheme=https;package=com.android.chrome;end";
+    } else {
+      b.textContent = "사파리로 열기";
+      b.href = "x-safari-https://" + location.host + "/install";
+    }
+    return;
+  }
+  if (isIOS) {
+    show("paneIos");
+    if (isSafari) { var w = document.getElementById("iosSafariWarn"); if (w) w.style.display = "none"; }
+    return;
+  }
+  if (isAndroid) {
+    show("paneAndroid");
+    var deferred = null;
+    var btn = document.getElementById("btnInstall");
+    var manual = document.getElementById("androidManual");
+    btn.style.display = "none";
+    window.addEventListener("beforeinstallprompt", function(e){
+      e.preventDefault(); deferred = e;
+      btn.style.display = "block"; manual.style.display = "none";
+    });
+    btn.addEventListener("click", function(){
+      if (!deferred) return;
+      deferred.prompt();
+      deferred.userChoice.then(function(c){
+        if (c.outcome === "accepted") { document.getElementById("paneAndroid").classList.add("hide"); show("paneDone"); }
+      });
+      deferred = null;
+    });
+    window.addEventListener("appinstalled", function(){
+      document.getElementById("paneAndroid").classList.add("hide"); show("paneDone");
+    });
+    return;
+  }
+  show("paneDesktop");
+})();
+</script>
+</body></html>
