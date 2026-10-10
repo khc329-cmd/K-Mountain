@@ -955,16 +955,33 @@ async function logSummitPing(mid,pos,dist,verified){
   }catch(e){}
 }
 
+/* 이미 기록이 있는 산에서 인증에 실패하면 아무것도 바꾸지 않는다.
+   예전에는 '자가 신고로 기록할까요?'가 떠서, 집에서 눌러도 가지 않은 등반이 한 번 더 세어졌다. */
+function keepMsg(m,d){
+  const rec=climbedRec(m.id);
+  const nth=rec&&rec.count>1?` (${nthClimbLabel(rec.count)})`:"";
+  const far=d==null
+    ?(lang==="ko"?"위치를 확인할 수 없어요.":"Couldn't get your location.")
+    :(lang==="ko"?`정상에서 약 ${(d/1000).toFixed(1)}km 떨어져 있어요.`:`You're ~${(d/1000).toFixed(1)}km from the summit.`);
+  return far+(lang==="ko"
+    ?`\n기존 등반 기록${nth}은 그대로 유지됩니다.`
+    :`\nYour existing climb record${nth} is kept as it is.`);
+}
 function verifyClimb(m,btn){
-  if(!navigator.geolocation){if(confirm(t("ask_self")))markClimbed(m.id,false,null).then(()=>afterClimb(m.id));return}
+  const had=isClimbed(m.id);
+  if(!navigator.geolocation){
+    if(had){alert(keepMsg(m,null));afterClimb(m.id);return}
+    if(confirm(t("ask_self")))markClimbed(m.id,false,null).then(()=>afterClimb(m.id));return}
   btn.disabled=true;btn.textContent=t("verifying");
   navigator.geolocation.getCurrentPosition(pos=>{
     const d=distM(pos.coords.latitude,pos.coords.longitude,m.lat,m.lng);
     logSummitPing(m.id,pos,d,d<=VERIFY_RADIUS);
-    if(d<=VERIFY_RADIUS)markClimbed(m.id,true,d).then(()=>afterClimb(m.id));
-    else if(confirm(lang==="ko"?`정상에서 약 ${(d/1000).toFixed(1)}km 떨어져 있어요.\n정상에 계신 게 맞다면 저희 좌표가 틀렸을 수 있어 현재 위치를 접수했습니다.\n'자가 신고'로 기록할까요?`:`You're ~${(d/1000).toFixed(1)}km from the summit.\nIf you really are at the summit our coordinates may be wrong — your location has been reported.\nRecord as self-reported instead?`))markClimbed(m.id,false,d).then(()=>afterClimb(m.id));
+    if(d<=VERIFY_RADIUS){markClimbed(m.id,true,d).then(()=>afterClimb(m.id));return}
+    if(had){alert(keepMsg(m,d));afterClimb(m.id);return}
+    if(confirm(lang==="ko"?`정상에서 약 ${(d/1000).toFixed(1)}km 떨어져 있어요.\n정상에 계신 게 맞다면 저희 좌표가 틀렸을 수 있어 현재 위치를 접수했습니다.\n'자가 신고'로 기록할까요?`:`You're ~${(d/1000).toFixed(1)}km from the summit.\nIf you really are at the summit our coordinates may be wrong — your location has been reported.\nRecord as self-reported instead?`))markClimbed(m.id,false,d).then(()=>afterClimb(m.id));
     else afterClimb(m.id);
   },()=>{
+    if(had){alert(keepMsg(m,null));afterClimb(m.id);return}
     if(confirm(lang==="ko"?"위치를 확인할 수 없어요.\n'자가 신고'로 기록할까요?":"Couldn't get your location.\nRecord as self-reported instead?"))markClimbed(m.id,false,null).then(()=>afterClimb(m.id));
     else afterClimb(m.id);
   },{enableHighAccuracy:true,timeout:12000,maximumAge:60000});
