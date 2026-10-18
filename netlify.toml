@@ -26,3 +26,6 @@
   for = "/sw.js"
   [headers.values]
     Cache-Control = "no-cache"
+
+[images]
+  remote_images = ['https://tong\.visitkorea\.or\.kr/.*', 'https://firebasestorage\.googleapis\.com/.*', 'https://.*\.googleusercontent\.com/.*', 'https://upload\.wikimedia\.org/.*']
