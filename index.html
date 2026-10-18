@@ -893,6 +893,23 @@ async function unclimb(id){
 function afterClimb(id){openModal(id);renderAuth();renderGrid();if(view==="leaderboard")renderLeaderboard()}
 
 /* ── Summit share card (canvas) ── */
+/* 캔버스에 그릴 이미지를 불러온다.
+   사진 서버가 CORS 헤더를 주지 않으면 crossOrigin 로딩이 실패해 카드가 기본 배경으로 떨어진다.
+   Netlify Image CDN(/.netlify/images)을 거쳐 같은 도메인에서 받아 그 문제를 피한다. */
+function _loadImg(src,useCors){
+  return new Promise((res,rej)=>{
+    const i=new Image();
+    if(useCors)i.crossOrigin="anonymous";
+    i.onload=()=>res(i);i.onerror=rej;i.src=src;
+  });
+}
+async function loadForCanvas(url){
+  if(!url)throw new Error("no url");
+  if(url.startsWith("/")||url.startsWith(location.origin))return _loadImg(url,true);
+  const proxied="/.netlify/images?url="+encodeURIComponent(url)+"&w=1080&fit=cover";
+  try{return await _loadImg(proxied,true)}catch(e){/* 로컬 개발 등 프록시가 없는 환경 */}
+  return _loadImg(url,true);
+}
 async function makeClimbCardBlob(m,rec){
   const W=1080,H=1350,c=document.createElement("canvas");c.width=W;c.height=H;
   const x=c.getContext("2d");
@@ -901,7 +918,7 @@ async function makeClimbCardBlob(m,rec){
   const imgUrl=climbCardImg(m,rec);
   if(imgUrl){
     try{
-      const img=await new Promise((res,rej)=>{const i=new Image();i.crossOrigin="anonymous";i.onload=()=>res(i);i.onerror=rej;i.src=imgUrl});
+      const img=await loadForCanvas(imgUrl);
       const r=Math.max(W/img.width,H/img.height),iw=img.width*r,ih=img.height*r;
       x.drawImage(img,(W-iw)/2,(H-ih)/2,iw,ih);
       c.toDataURL();/* CORS 오염 검사 — 실패 시 catch에서 그라데이션으로 복구 */
