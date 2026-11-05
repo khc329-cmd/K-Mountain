@@ -2188,12 +2188,22 @@ async function renderEvents(){
 
 /* ── Announcements / Inbox ── */
 let _announcements=[];
+/* 공지는 두 번 나눠 읽는다 — 전체 공지(global)와 나를 대상으로 한 공지(uids).
+   Firestore 는 "규칙으로 증명되지 않는 조회"를 통째로 거부하므로, 한 번에 다 읽으려 하면
+   대상 지정 공지 하나 때문에 공지함 전체가 비어버린다. */
 async function loadAnnouncements(){
-  try{
-    const snap=await db.collection("announcements").orderBy("ts","desc").limit(30).get();
-    _announcements=snap.docs.map(d=>({id:d.id,...d.data()}));
-    renderAuth();
-  }catch(e){}
+  const uid=_user&&_user.uid;if(!uid)return;
+  const col=db.collection("announcements");
+  const [g,m]=await Promise.all([
+    col.where("global","==",true).orderBy("ts","desc").limit(30).get().catch(e=>{console.warn("공지(전체):",e.code);return null}),
+    col.where("uids","array-contains",uid).orderBy("ts","desc").limit(30).get().catch(e=>{console.warn("공지(개인):",e.code);return null}),
+  ]);
+  const byId={};
+  for(const snap of [g,m]) if(snap) snap.docs.forEach(d=>{byId[d.id]={id:d.id,...d.data()}});
+  _announcements=Object.values(byId).sort((a,b)=>{
+    const ta=a.ts&&a.ts.seconds?a.ts.seconds:0, tb=b.ts&&b.ts.seconds?b.ts.seconds:0;return tb-ta;
+  });
+  renderAuth();
 }
 function openInbox(){
   localStorage.setItem("lastReadAnn",Date.now().toString());
